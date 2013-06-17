@@ -11,7 +11,5 @@ name := "mintpresso-play"
 scalaVersion := "2.10.0"
 
 libraryDependencies ++= Seq(
-  "play" %% "play" % "2.1.0",
-  "com.typesafe" % "config" % "1.0.1"
+  "play" %% "play" % "2.1.0"
 )
-
