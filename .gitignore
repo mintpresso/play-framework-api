@@ -1,0 +1,17 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Framework FIles #
+repository
+documentation
+target
+samples
+logs
+
+# Sublime Files #
+*.sublime-project
+*.sublime-workspace
