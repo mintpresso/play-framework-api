@@ -142,18 +142,22 @@ class Mintpresso(accId: Int, token: String) {
 {
   "edge": {
     "subjectId": "%s",
+    "subjectIdentifier": "%s",
     "subjectType": "%s",
     "verb": "%s",
     "objectId": "%s",
+    "objectIdentifier": "%s",
     "objectType": "%s"
   }
 }
     """.format(
-      query.get("subjectId").getOrElse("\"\""),
-      query.get("subjectType").getOrElse("\"\""),
-      query.get("verb").getOrElse("\"\""),
-      query.get("objectId").getOrElse("\"\""),
-      query.get("objectType").getOrElse("\"\"")
+      query.get("subjectId").getOrElse(""),
+      query.get("subjectIdentifier").getOrElse(""),
+      query.get("subjectType").getOrElse(""),
+      query.get("verb").getOrElse(""),
+      query.get("objectId").getOrElse(""),
+      query.get("objectIdentifier").getOrElse(""),
+      query.get("objectType").getOrElse("")
     )
     WS.url(server + urls("linkWithEdge").format(accId))
       .withHeaders( ("X-Requested-With", initial) )
