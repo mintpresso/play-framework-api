@@ -1,6 +1,6 @@
 name := "Mintpresso Play Framework API"
 
-version := "1.0"
+version := "1.01"
 
 organization := "com.mintpresso"
 
